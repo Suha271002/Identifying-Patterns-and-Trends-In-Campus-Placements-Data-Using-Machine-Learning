@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Placement Prediction</title>
+</head>
+<body>
+    <div class="intro">
+<center>
+        <h1 style="color:blue;">Fill The Details</h1>
+</center>
+        
+    </div>
+    <form action="{{ url_for('predict')}}" name="form" method="GET">
+     <p>Enter Age</p>
+        <input type="number" name="age" id="age">
+        <br>  
+
+        <p>Enter Gender</p>
+        <input type="number" name="gender" id="gender">
+        <br>
+        <p>Enter Stream</p>
+        <input type="number" name="stream" id="stream">
+        <br>
+        <p>Enter Internships</p>
+        <input type="number" name="internship" id="internship">
+        <br>
+        <p>Enter CGPA</p>
+        <input type="number" name="cgpa" id="cgpa">
+        <br>
+        <p>Enter Backlogs</p>
+        <input type="text" name="backlogs" id="backlogs">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+    
+</body>
+</html>
